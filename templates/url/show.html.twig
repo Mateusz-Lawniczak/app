@@ -5,7 +5,7 @@
 {% block body %}
     <h2>Give your feedback!</h2>
 
-    {% for conference in url %}
-        <h4>{{ conference }}</h4>
-    {% endfor %}
+    
+        <h4>{{url.url }}</h4>
+        <h4>{{url.slug }}</h4>
 {% endblock %}

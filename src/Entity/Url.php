@@ -22,6 +22,7 @@ class Url
     #[ORM\Column]
     private ?int $count = null;
 
+   
     public function getId(): ?int
     {
         return $this->id;
@@ -61,5 +62,9 @@ class Url
         $this->count = $count;
 
         return $this;
+    }
+    public function __toString(): string
+    {
+        return (string) $this->getUrl();
     }
 }
